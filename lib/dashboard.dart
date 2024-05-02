@@ -46,7 +46,7 @@ class _DashboardState extends State<Dashboard> {
                     child: Container(
                       padding: const EdgeInsets.all(15),
                       child: Text(
-                        "SnackBar",
+                        "SnackBar with\nGetx",
                         style: TextStyle(
                           fontSize: 17,
                           fontWeight: FontWeight.bold,
@@ -78,7 +78,7 @@ class _DashboardState extends State<Dashboard> {
                         color: Colors.blue,
                       ),
                       child: const Text(
-                        "BottomSheet",
+                        "BottomSheet with\nGetx",
                         style: TextStyle(
                           fontSize: 16,
                           fontWeight: FontWeight.bold,
@@ -112,7 +112,7 @@ class _DashboardState extends State<Dashboard> {
                         color: Colors.blue,
                       ),
                       child: const Text(
-                        "Route Navigation",
+                        "Route Navigation\nwith GetX",
                         style: TextStyle(
                           fontSize: 16,
                           fontWeight: FontWeight.bold,
@@ -140,7 +140,7 @@ class _DashboardState extends State<Dashboard> {
                         color: Colors.blue,
                       ),
                       child: const Text(
-                        "BottomSheet",
+                        "Named Navigation\nwith GetX",
                         style: TextStyle(
                           fontSize: 16,
                           fontWeight: FontWeight.bold,

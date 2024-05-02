@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_gtx_roadmap/screens_transfering/screen_two.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
 
 class ScreenOne extends StatefulWidget {
   const ScreenOne({super.key});

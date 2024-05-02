@@ -28,7 +28,7 @@ class _ScreenOneState extends State<ScreenOne> {
             children: [
               GestureDetector(
                 onTap: () {
-                  Get.to(const ScreenTwo());
+                  Get.to(ScreenTwo());
                 },
                 child: Container(
                   padding: const EdgeInsets.all(10),

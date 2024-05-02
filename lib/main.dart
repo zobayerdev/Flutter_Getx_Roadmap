@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_gtx_roadmap/dashboard.dart';
 import 'package:device_preview/device_preview.dart';
+import 'package:flutter_gtx_roadmap/screens_transfering/screen_two.dart';
 import 'package:get/get.dart';
 
 void main() => runApp(
@@ -29,6 +30,10 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       home: const Dashboard(),
+      getPages: [
+        GetPage(name: '/', page: () => Dashboard()),
+        GetPage(name: '/screenTwo', page: () => ScreenTwo()),
+      ],
     );
   }
 }

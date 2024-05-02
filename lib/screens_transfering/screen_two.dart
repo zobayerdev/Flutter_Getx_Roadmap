@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_gtx_roadmap/dashboard.dart';
 import 'package:get/get.dart';
 
+// ignore: must_be_immutable
 class ScreenTwo extends StatefulWidget {
-  const ScreenTwo({super.key});
+  var name;
+  ScreenTwo({super.key, this.name});
 
   @override
   State<ScreenTwo> createState() => _ScreenTwoState();
@@ -13,14 +16,14 @@ class _ScreenTwoState extends State<ScreenTwo> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text(
-          "Screen Two",
-          style: TextStyle(fontSize: 17),
+        title: Text(
+          "Screen Two " + Get.arguments[1],
+          style: const TextStyle(fontSize: 17),
         ),
         leading: IconButton(
           icon: const Icon(Icons.arrow_back),
           onPressed: () {
-            Get.back();
+            Get.to(const Dashboard());
           },
         ),
         centerTitle: true,

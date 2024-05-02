@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_gtx_roadmap/alert_and_bottomsheets/bottom_sheets.dart';
 import 'package:flutter_gtx_roadmap/screens_transfering/screen_one.dart';
+import 'package:flutter_gtx_roadmap/screens_transfering/screen_two.dart';
 import 'package:flutter_gtx_roadmap/snackbar/snackbar.dart';
+import 'package:get/get.dart';
 
 class Dashboard extends StatefulWidget {
   const Dashboard({super.key});
@@ -125,14 +127,13 @@ class _DashboardState extends State<Dashboard> {
                 Padding(
                   padding: const EdgeInsets.all(10),
                   child: GestureDetector(
-                    // onTap: () {
-                    //   Navigator.push(
-                    //     context,
-                    //     MaterialPageRoute(
-                    //       builder: (context) => const BottomSheets(),
-                    //     ),
-                    //   );
-                    // },
+                    onTap: () {
+                      Get.to(ScreenTwo());
+                      Get.toNamed(
+                        '/screenTwo',
+                        arguments: ['Nayem', 'Noman'],
+                      );
+                    },
                     child: Container(
                       padding: const EdgeInsets.all(15),
                       decoration: BoxDecoration(

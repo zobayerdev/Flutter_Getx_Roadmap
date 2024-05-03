@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_gtx_roadmap/alert_and_bottomsheets/bottom_sheets.dart';
 import 'package:flutter_gtx_roadmap/app_language/localization.dart';
+import 'package:flutter_gtx_roadmap/counter_screen.dart';
 import 'package:flutter_gtx_roadmap/height_width/height_width.dart';
 import 'package:flutter_gtx_roadmap/screens_transfering/screen_one.dart';
 import 'package:flutter_gtx_roadmap/screens_transfering/screen_two.dart';
@@ -200,6 +201,58 @@ class _DashboardState extends State<Dashboard> {
                       ),
                       child: const Text(
                         "Language Translation\nwith GetX",
+                        style: TextStyle(
+                          fontSize: 16,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white,
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+              ],
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                Padding(
+                  padding: const EdgeInsets.all(10),
+                  child: GestureDetector(
+                    onTap: () {
+                      Get.to(CounterScreens());
+                    },
+                    child: Container(
+                      padding: const EdgeInsets.all(15),
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(5),
+                        color: Colors.blue,
+                      ),
+                      child: const Text(
+                        "Counter\nwith GetX",
+                        style: TextStyle(
+                          fontSize: 16,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white,
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(10),
+                  child: GestureDetector(
+                    onTap: () {
+                      Get.to(const LangugageApps());
+                    },
+                    child: Container(
+                      padding: const EdgeInsets.all(15),
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(5),
+                        color: Colors.blue,
+                      ),
+                      child: const Text(
+                        "Second\nwith GetX",
                         style: TextStyle(
                           fontSize: 16,
                           fontWeight: FontWeight.bold,

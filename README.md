@@ -6,3 +6,9 @@
 
 [01/05/2024]
 - Alert Dialog & Bottom Sheets.
+
+[02/05/2024]
+- Getx navigation route
+- language translation
+- Getx Height and Width
+- Routing with Getx

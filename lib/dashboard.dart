@@ -190,11 +190,7 @@ class _DashboardState extends State<Dashboard> {
                   padding: const EdgeInsets.all(10),
                   child: GestureDetector(
                     onTap: () {
-                      Get.to(LangugageApps());
-                      // Get.toNamed(
-                      //   '/screenTwo',
-                      //   arguments: ['Nayem', 'Noman'],
-                      // );
+                      Get.to(const LangugageApps());
                     },
                     child: Container(
                       padding: const EdgeInsets.all(15),
@@ -203,7 +199,7 @@ class _DashboardState extends State<Dashboard> {
                         color: Colors.blue,
                       ),
                       child: const Text(
-                        "Named Navigation\nwith GetX",
+                        "Language Translation\nwith GetX",
                         style: TextStyle(
                           fontSize: 16,
                           fontWeight: FontWeight.bold,

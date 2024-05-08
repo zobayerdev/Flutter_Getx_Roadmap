@@ -80,7 +80,18 @@ class _LoginScreenState extends State<LoginScreen> {
                 ),
               ),
             ),
-          )
+          ),
+          Text(
+            "user these email and password",
+          ),
+          SizedBox(
+            height: 10,
+          ),
+          Text("Email:eve.holt@reqres.in"),
+          SizedBox(
+            height: 10,
+          ),
+          Text("pass:cityslicka"),
         ],
       ),
     );
